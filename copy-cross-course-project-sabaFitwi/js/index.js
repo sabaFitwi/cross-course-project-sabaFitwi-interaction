@@ -7,8 +7,8 @@ let cartArray = [];
 function generateHtml() {
   dataTORender.forEach(function (data) {
     productsContainer.innerHTML += `<div class = "products">
-                                          <div style= "background-image: url(${data.image})"
-                                          class="image-products" alt = "${data.category}"></div>
+                                         <a href="products/hiking-jacket.html"> <div  style= "background-image: url(${data.image})"
+                                          class="image-products" alt = "${data.category}"></div></a>
                                           <h4>${data.title}</h4>
                                           <p>US $${data.price}</p>
                                           <button class="cart" data-result="${data.id}" >Add to cart</button>
